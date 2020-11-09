@@ -8,11 +8,11 @@ body{
 }
 
 h1{
+  font-family: "Georgia";
   font-size: 2em;
   text-align: center;
   line-height: 2;
   margin-top: 40px;
-  font-family: "Georgia";
 }
 
 p {
@@ -64,12 +64,12 @@ header{
   grid-row: 3 / span 1;
 }
 
-.video {
+.themereveal {
   grid-column: 2 / span 1;
   grid-row: 4 / span 1;
 }
 
-.item-1, .item-2, .item-3, .video {
+.item-1, .item-2, .item-3, .themereveal {
   padding: 30px;
   margin: 10px;
   max-width: 100%;
