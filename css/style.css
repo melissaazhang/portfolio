@@ -119,7 +119,7 @@ header{
 .works{
   display: grid;
   align-content: center;
-  grid-template-columns: 90px auto 90px;
+  grid-template-columns: 40px auto 40px;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   margin-top: 20px;
   margin-bottom: 10px;
