@@ -31,6 +31,10 @@ p > a{
   font-style: none;
 }
 
+.index_header{
+  margin-bottom: 5px;
+}
+
 header{
   background: #FAF0E6;
   display: flex;
@@ -175,7 +179,6 @@ header{
   padding: 10px;
 }
 
-
 .wei_text{
   grid-column: 1/ span 3;
   grid-row: 1 / span 1;
@@ -218,6 +221,20 @@ header{
   grid-column-gap: 5px;
   margin: 10px;
   padding: 10px;
+}
+
+.osm_image{
+  max-width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center;
+  padding: 20px 0px 0px 0px;
+}
+
+.osm_caption{
+  font-size: 12px;
+  text-align: center;
+  padding: 10px 0px 0px 0px;
 }
 
 a.skip{
