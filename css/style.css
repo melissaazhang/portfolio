@@ -2,6 +2,8 @@ body{
   font-family: 'Helvetica', sans-serif;
   margin: 18px;
   padding: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 20px;
   background-color: #FAF0E6;
   color: #2E343B; 
@@ -11,13 +13,14 @@ h1{
   font-family: "Georgia";
   font-size: 1.5em;
   text-align: center;
-  line-height: 2;
+  line-height: 1;
   margin-top: 30px;
 }
 
 h2{
   font-size: 1em;
   text-align: center;
+  margin-top: 15px;
 }
 
 p {
@@ -54,7 +57,7 @@ header{
 
 .nav_links{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -115,7 +118,7 @@ header{
 .item-1, .item-2, .item-3, .themereveal, .item-4, .item-5, .item-6, .item-7,
 .item-8, .item-9 {
   grid-column: 2 / span 1;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
   max-width: 100%;
   height: auto;
@@ -129,7 +132,7 @@ header{
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
   margin-top: 20px;
   margin-bottom: 10px;
-  grid-row-gap: 30px;
+  grid-row-gap: 5px;
 }
 
 .zhang_text{
