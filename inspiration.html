@@ -45,34 +45,7 @@
 			video transitions</p>
 	</div>
 
-	<div id="myModal" class="modal">
-		<span class="close">&times;</span>
-		<img class="modal-content" id="img01">
-		<div id="caption"></div>
-	  </div>
 </main>
-
-<script>
-	var modal = document.getElementById("myModal");
-	var img = document.getElementsByClassName("zhang_img_1","zhang_img_2","zhang_img_3");
-	var modalImg = document.getElementById("img01");
-	var captionText = document.getElementById("caption");
-
-	for (var i = 0; i < images.length; i++) {
-		var img = images[i];
-		img.onclick = function(evt) {
-			modal.style.display = "block";
-			modalImg.src = this.src;
-			captionText.innerHTML = this.alt;
-			}
-	}
-	
-	var span = document.getElementsByClassName("close")[0];
-	
-	span.onclick = function() { 
-	  modal.style.display = "none";
-	}
-</script>
 
 <footer>
 <p>Melissa Zhang &copy; 2020</p>
