@@ -468,6 +468,9 @@ footer{
    padding-right:250px;
    padding-bottom: 30px;
  }
+  
+ .hidden {
+   visibility: hidden;
 
  
  }
