@@ -72,6 +72,10 @@ header{
   animation-name: bounceIn;
 }
 
+.hidden, .hiddenh2 {
+  display: none;
+}
+
 .nav_links{
   display: flex;
   flex-direction: column;
@@ -150,12 +154,62 @@ header{
   justify-self: center;
 }
 
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 #98460E;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #A73030;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.back_text {
+  padding-top: 100px;
+}
+
+
+
 .works{
   display: grid;
   align-content: center;
   grid-template-columns: 20px auto 20px;
   grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   grid-row-gap: 5px;
 }
@@ -403,18 +457,42 @@ footer{
 
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+  and (min-device-width: 600px) 
+  and (max-device-width: 1025px) 
   and (-webkit-min-device-pixel-ratio: 1) {
   
   header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
-  h1{
-    visibility:hidden;
+  h1, h2{
+    display: none;
+  }
+
+  h2 {
+    padding-bottom: 30px;
+  }
+
+  nav {
+    padding-right: 120px;
+  }
+
+  .header_image {
+    padding-left: 60px;
+    padding-right: 15px;
+  }
+
+  .header_image {
+    max-width:50%;
+  }
+
+  .hidden, .hiddenh2 {
+    display: block;
+  }
+
+  .hidden {
     font-family: "Georgia";
     font-size: 1.5em;
     text-align: center;
@@ -423,18 +501,12 @@ footer{
     color: #2E396F;
   }
 
-  h2 {
-    visibility:hidden;
+  .hiddenh2 {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 15px;
+    color: #2E396F
   }
-
-  .header_image {
-    max-width:50%;
-  }
-
-  .hidden {
-    visibility: visible;
-  }
-
 }
 
 
@@ -469,6 +541,14 @@ footer{
    padding-bottom: 30px;
  }
 
+
+.hidden {
+  display: none;
+}
+
+.hiddenh2{
+  display:none;
+}
  
  }
  
