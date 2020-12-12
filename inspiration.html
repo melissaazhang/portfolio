@@ -18,6 +18,7 @@
 			<li class="nav_item"><a href="work.html">WORK</a></li>
 			<li class="nav_item"><a href="future.html">FUTURE</a></li>
 			<li class="nav_item"><a style="font-weight:bold; font-size:35px" href="inspiration.html">INSPIRATION</a></li>
+			<li class="nav_item"><a href="contactform.html">CONTACT</a></li>
 		</ul>
 	</nav>
 <h1 class="about" id="skip" tabindex="0">Design Inspiration</h1>
@@ -25,23 +26,52 @@
 </header>
 
 <main>
+	<h1 class="hidden" id="skip" tabindex="0">Design Inspiration</h1>
 	<div class = "zhang">
-		<p class="zhang_text">Zhang Jiacheng (aka Leslie Zhang)</p>
-		<img class="zhang_img_1" src="images/zhang1.png" alt="Screenshot 1 from Zhang's instagram" />
-		<img class="zhang_img_2" src="images/zhang2.png" alt="Screenshot 2 from Zhang's instagram" />
-		<img class="zhang_img_3" src="images/egggirl.jpg" alt="Photograph of girl holding an egg; 
+		<p class="zhang_text1">Zhang Jiacheng<br>(aka Leslie Zhang)</p>
+		<img id = "zhang" class="zhang_img_1" src="images/zhang1.png" alt="Screenshot 1 from Zhang's instagram" />
+		<img id = "" class="zhang_img_2" src="images/zhang2.png" alt="Screenshot 2 from Zhang's instagram" />
+		<img id = "zhang3" class="zhang_img_3" src="images/egggirl.jpg" alt="Photograph of girl holding an egg; 
 		Credit: Thisispaper magazine - Pinterest" />
 		<p class="zhang_text2">Inspiration: saturated vs. muted colors, shapes, form, contrast of textures</p>
 	</div>
 	<div class = "wei">
-		<p class="wei_text">Leah Wei (aka Leah's Fieldnotes)</p>
-		<img class="wei_1" src="images/wei1.png" alt="Screenshot from Wei's video 1, looking at font and transition" />
-		<img class="wei_2" src="images/wei2.png" alt="Screenshot from Wei's video 2, looking at framing and layout" />
-		<img class="wei_3" src="images/wei3.png" alt="Screenshot from Wei's video 3, looking at juxtaposition and doodles" />
+		<p class="wei_text">Leah Wei<br>(aka Leah's Fieldnotes)</p>
+		<img id = "wei1" class="wei_1" src="images/wei1.png" alt="Screenshot from Wei's video 1, looking at font and transition" />
+		<img id = "wei2" class="wei_2" src="images/wei2.png" alt="Screenshot from Wei's video 2, looking at framing and layout" />
+		<img id = "wei3" class="wei_3" src="images/wei3.png" alt="Screenshot from Wei's video 3, looking at juxtaposition and doodles" />
 		<p class="wei_notes">Inspiration: juxtaposition and overlay, mixing visual mediums, fonts/typography, 
 			video transitions</p>
 	</div>
+
+	<div id="myModal" class="modal">
+		<span class="close">&times;</span>
+		<img class="modal-content" id="img01">
+		<div id="caption"></div>
+	  </div>
 </main>
+
+<script>
+	var modal = document.getElementById("myModal");
+	var img = document.getElementsByClassName("zhang_img_1","zhang_img_2","zhang_img_3");
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+
+	for (var i = 0; i < images.length; i++) {
+		var img = images[i];
+		img.onclick = function(evt) {
+			modal.style.display = "block";
+			modalImg.src = this.src;
+			captionText.innerHTML = this.alt;
+			}
+	}
+	
+	var span = document.getElementsByClassName("close")[0];
+	
+	span.onclick = function() { 
+	  modal.style.display = "none";
+	}
+</script>
 
 <footer>
 <p>Melissa Zhang &copy; 2020</p>
