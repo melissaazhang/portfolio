@@ -175,7 +175,9 @@ header{
   box-shadow: 0 4px 8px 0 #98460E;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card:focus .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -195,6 +197,10 @@ header{
 .flip-card-back {
   background-color: #A73030;
   color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card.focus-within .flip-card-inner{
   transform: rotateY(180deg);
 }
 
@@ -453,6 +459,11 @@ footer{
   .header_image {
     animation: none;
   }
+
+  .flip-card-inner {
+    transition: transform none;
+}
+
 }
 
 
